@@ -277,63 +277,6 @@ async def ping_error(ctx, error):
 
 
 
-@client.command()
-async def roast(ctx, *, member: discord.Member):
-    if ctx.author.id == 533069055784124437:
-        responses = ['You’re my favorite person besides every other person I’ve ever met.',
-                     "Wanna go swimming? Oh, you are already to busy swimming in that gene pool of yours.",
-                     'Did your parents have any children that lived?',
-                     'I envy people who have never met you.',
-                     'You’re not the dumbest person on the planet, but you sure better hope he doesn’t die.',
-                     'I’m sorry your dad beat you instead of cancer.',
-                     'The smartest thing to ever come out of your mouth was my penis',
-                     '']
-        await ctx.send(f"Hey {member.mention} {random.choice(responses)}")
-    else:
-        return
-
-
-@client.command()
-async def pp(ctx, *, member: discord.Member):
-    if ctx.author.id == 533069055784124437:
-        responses = ['8D',
-                     '8=D',
-                     '8==D',
-                     '8===D',
-                     '8====D',
-                     '8=====D',
-                     '8======D',
-                     '8=======D',
-                     '8========D',
-                     '8=========D',
-                     '8==========D']
-
-        await ctx.send(f"{member.name}'s PP Size: `{random.choice(responses)}`")
-    else:
-        return
-
-
-@client.command()
-async def howgay(ctx, *, member: discord.Member):
-    if ctx.author.id == 533069055784124437:
-        responses = ['10',
-                     '20',
-                     '30',
-                     '40',
-                     '50',
-                     '60',
-                     '70',
-                     '80',
-                     '90',
-                     '100',
-                     '0']
-
-        await ctx.send(f"{member.name} is: `{random.choice(responses)}%` gay")
-    else:
-        return
-
-
-
 
 @client.command()
 async def status(ctx):
